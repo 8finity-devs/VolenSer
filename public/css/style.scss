@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Revalia&display=swap'); //primary font
+$primaryColor: #11698E;
+$secondaryColor: #373737;
+
+body{
+    // background-color: $primaryColor;
+    font-family: 'Revalia', cursive;
+}
+
+.navbar{
+    font-size: 0.75rem;
+
+    .nav-link{
+        color: $secondaryColor !important;
+    }
+
+    .active{
+        color: $primaryColor !important;
+    }
+
+}
+
+#hero-section{
+
+    .overlay{
+        width: 100%;
+        // height: property-value(height, hero-img);
+        height: 570px;
+        position: absolute;
+        top: 4.2rem;
+        left: 0%;
+        background-color: $primaryColor;
+        opacity: 10%;
+    }
+
+    .text-overlay {
+        position: absolute;
+        top: 60%;
+        left: 45%;
+        color: white;
+        transform: translate(-50%, -50%);
+    }
+}
+
