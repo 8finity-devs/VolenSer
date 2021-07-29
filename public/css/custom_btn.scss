@@ -1,0 +1,35 @@
+@import "./variables";
+
+/* custom button */
+
+.custom-btn{
+    width: fit-content;
+    height: 36px;
+    background-color: $primaryColor;
+    border: none;
+    font-size: 14px;
+    color: white;
+    // font-family: 'Lato', sans-serif;
+    transition: 0.2s;
+    letter-spacing: 2px;
+    border-radius: 0;
+    padding: 0 25px;
+
+    &.btn-sm{
+        height: 26px;
+    }
+
+    &.btn-lg{
+        height: 46px;
+    }
+  }
+  
+  /* .custom-btn .btn-rounded{
+    border-radius: 4rem;
+  } */
+  
+//   .custom-btn .custom-btn:hover{
+    /* font-weight: 600; */
+//   }
+  
+  

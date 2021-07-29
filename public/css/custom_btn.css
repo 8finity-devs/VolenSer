@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Revalia&display=swap");
+/* custom button */
+.custom-btn {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 36px;
+  background-color: #11698E;
+  border: none;
+  font-size: 14px;
+  color: white;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  letter-spacing: 2px;
+  border-radius: 0;
+  padding: 0 25px;
+}
+
+.custom-btn.btn-sm {
+  height: 26px;
+}
+
+.custom-btn.btn-lg {
+  height: 46px;
+}
+
+/* .custom-btn .btn-rounded{
+    border-radius: 4rem;
+  } */
+/* font-weight: 600; */
+/*# sourceMappingURL=custom_btn.css.map */
