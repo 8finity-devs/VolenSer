@@ -5,6 +5,50 @@ body{
     font-family: 'Revalia', cursive;
 }
 
+.navbar{
+    font-size: 0.75rem;
+
+    .nav-link{
+        color: $secondaryColor !important;
+    }
+
+    .active{
+        color: $primaryColor !important;
+    }
+
+}
+
+#hero-section{
+
+    h1{
+        font-size: 2rem;
+    }
+
+    .overlay{
+        width: 100%;
+        // height: property-value(height, hero-img);
+        height: 570px;
+        position: absolute;
+        top: 4.2rem;
+        left: 0%;
+        background-color: $primaryColor;
+        opacity: 10%;
+    }
+
+    .text-overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        color: white;
+        transform: translate(-45%, -50%);
+    }
+
+    .highlight{
+        color: $primaryColor;
+        background-color: rgba(255, 255, 255, 0.8) ;
+    }
+}
+
 #main-section{
     h4, h5{
         color: $primaryColor;
@@ -75,48 +119,175 @@ body{
     
 }
 
+#testimonial-section{
+    margin: 4rem;
 
-.navbar{
+    .carousel-control-prev, .carousel-control-next{
+        top: 30%;
+        margin: 0 -120px;
+        color: $secondaryColor;
+    }
+
+    .carousel-inner{
+        margin-top: 2rem;
+        background-color: $secondaryColor;
+        padding-bottom: 10rem;
+        border-radius: 0.75rem;
+
+        h6{
+            color: #fff;
+            line-height: 2.5;
+            position: relative;
+            top: 100px;
+            left: -50px;
+            padding: 10px;
+        }
+
+        p{
+            color: #fff;
+            font-size: 0.75rem;
+            position: relative;
+            top: 75px;
+            left: -110px;
+        }
+    }
+
+    .profile-section{
+        position: relative;
+        top: 70px;
+    }
+    
+}
+
+footer{
+    background-color: $primaryColor;
+    margin-top: 150px;
+    color: #fff;
     font-size: 0.75rem;
 
-    .nav-link{
-        color: $secondaryColor !important;
+    a{
+        text-decoration: none;
+        color: #fff;
+
+        &:hover{
+            color: $greyAccent;
+        }
+    }
+}
+
+////////////////// Media Queries //////////////////
+// the given screen size or smaller
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    #hero-section{
+
+        h1{
+            font-size: 1rem;
+        }
+    
+        .text-overlay {
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            color: white;
+            transform: translate(-45%, -50%);
+        }
     }
 
-    .active{
-        color: $primaryColor !important;
+    #main-section{
+
+        h4{
+            font-size: 1.2rem;
+        }
+
+        h5{
+            font-size: 0.9rem;
+        }
+
+        h6{
+            font-size: 0.7rem;
+        }
+    
+        .scroll-arrow{
+            font-size: 20px;
+        }
+    
+        .sub-section{
+            margin-top: 3rem;
+            text-align: left;
+    
+            p,li{
+                font-size: 0.5rem;
+            }
+    
+            ul{
+                position: relative;
+                left: -30px;
+            }
+    
+            img{
+                width: 80vw;
+                margin-left: 20px;
+            }
+        }
     }
+
+    #testimonial-section{
+        margin: 4rem;
+        
+        .carousel-control-prev, .carousel-control-next{
+            top: 20%;
+            margin: 0 -70px;
+        }
+    
+        .carousel-inner{
+            margin-top: 1rem;
+            height: 400px;
+        }
+    
+        .profile-img{
+            width: 4rem;
+            position: relative;
+            top: 20px;
+            left: -100px;
+        }
+
+        h4{
+            font-size: 1.2rem;
+        }
+
+        h6{
+            font-size: 0.6rem;
+        }
+        
+    }
+    
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+    #hero-section{
+
+        h1{
+            font-size: 1.5rem;
+        }
+
+    }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
 
 }
 
-#hero-section{
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
 
-    h1{
-        font-size: 2rem;
-    }
-
-    .overlay{
-        width: 100%;
-        // height: property-value(height, hero-img);
-        height: 570px;
-        position: absolute;
-        top: 4.2rem;
-        left: 0%;
-        background-color: $primaryColor;
-        opacity: 10%;
-    }
-
-    .text-overlay {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        color: white;
-        transform: translate(-45%, -50%);
-    }
-
-    .highlight{
-        color: $primaryColor;
-        background-color: rgba(255, 255, 255, 0.8) ;
-    }
 }
+
+// X-Large devices (large desktops, less than 1400px)
+@media (max-width: 1399.98px) {
+
+}
+
 
