@@ -50,8 +50,31 @@ body{
 }
 
 #main-section{
+
+    .padded-container-lg{
+        padding: 0 2%;
+    }
+
+    .padded-container-md{
+        padding: 0 5%;
+    }
+
     h4, h5{
         color: $primaryColor;
+    }
+
+    ul{
+        position: relative;
+        left: -30px;
+    }
+
+    li{
+        font-size: 0.7rem;
+        list-style: none;
+        
+        &:before {
+            content: ">   ";
+        }
     }
 
     .scroll-arrow{
@@ -66,20 +89,6 @@ body{
 
         p{
             font-size: 0.7rem;
-        }
-
-        ul{
-            position: relative;
-            left: -30px;
-        }
-
-        li{
-            font-size: 0.7rem;
-            list-style: none;
-            
-            &:before {
-                content: ">   ";
-            }
         }
 
         img{

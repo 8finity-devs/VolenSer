@@ -1,2 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Revalia&display=swap");
+h4 {
+  padding-bottom: 10px;
+}
+
+h6 {
+  font-size: 0.9rem;
+}
+
+h5 {
+  padding: 40px 0 10px 0;
+}
+
+p {
+  font-size: 0.8rem;
+  line-height: 1;
+}
 /*# sourceMappingURL=about-us.css.map */
